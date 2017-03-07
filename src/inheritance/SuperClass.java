@@ -12,15 +12,19 @@ package inheritance;
 
 public class SuperClass {
 	  protected static int i;
+//	  SuperClass(){             // Either define a default constructor or call super class 
+	  							// constructor explicitly in subclass constructor	  
+//	  }
 	 
 	   public SuperClass(int i)
 	    {
+		 
 	        System.out.println("Class A Constructor");
 	    }
 	}
 	 
 	class SubClass extends SuperClass
-	{
+	{ 
 	    int i;
 	    public SubClass()
 	    {
